@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 500px;
+}
+.container .image-section {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/image-product-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+.container .content-section {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 1rem 1rem 0;
+  padding: 2rem;
+  background-color: #fff;
+}
+.container .content-section .mini-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
+.container .content-section .title {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.2rem;
+  margin: 1.5rem 0;
+  color: hsl(212, 21%, 14%);
+}
+.container .content-section .text {
+  font-size: 0.9rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5rem;
+}
+.container .content-section .price-section {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  gap: 1.5rem;
+}
+.container .content-section .price-section .price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+}
+.container .content-section .price-section .previous-price {
+  font-size: 0.9rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.container .content-section .btn {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.container .content-section .btn:hover {
+  filter: brightness(90%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: min(500px, 90%);
+    margin: auto;
+  }
+  .container .image-section {
+    background-image: url(images/image-product-mobile.jpg);
+    border-radius: 1rem 1rem 0 0;
+    min-height: 300px;
+  }
+  .container .content-section {
+    border-radius: 0 0 1rem 1rem;
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
